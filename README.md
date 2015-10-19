@@ -1,11 +1,11 @@
 # GitHub Tutorial
 
-_by <your-name-here>_
+_by Derek Conde Barranco_
 
 ---
 ## Git vs. GitHub
-
-
+* Git is version control
+* 
 
 ---
 ## Initial Setup
