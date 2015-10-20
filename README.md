@@ -7,13 +7,16 @@ _by Derek Conde Barranco_
 ###Git
 * `Git` is version control by keeping **"snapshots"** of code
    * Runs in the command line but doesn't require github. 
+   * View past commits(snapshots) to refer back to the original code that you've created
+   * Use commits to go back to a version of your code in case anything goes wrong or if there's a groundbreaking mistake
 
 ###Github
 * `Github` stores your code in the cloud(**internet**) and is used to check changes from Git.
     * `Github` is also used to collab with others on the same files.
     * Can be used to interact with code and snapshots from Git.
     * Runs in the command line
-     * Uses git to interact with code from the snapshots     
+     * Uses git to interact with code from the snapshots
+     * Once you use git,it becomes a repository
 ---   
 ## Initial Setup
 1. To first start setting up your github, you mush create an account on [github.com](http://www.github.com)
