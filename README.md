@@ -29,7 +29,12 @@ _by Derek Conde Barranco_
 
 ---
 ## Workflow & Commands
-* `git init` calls your directory, repo for version control
-* `git status` View what files have been edited so far
+* `git init` Calls your directory, repo for version control
+* `git status` View what files have been edited so far or that need to be committed
 * `git add file.ext` Adds the file to the stage for it to be committed(**snapshot**)
-* `git add . ` adds entire directory to the stage.
+* `git add . ` Adds entire directory to the stage.
+* `git commit -m "short/specific message"` Commits the file and write a small message with it
+     * You need to write a message to the commit or else it will not work
+* `git log` See your past commit
+* `git help` gives you help with commands in case you forget
+* `git diff` View the difference between your code and your previous commit
