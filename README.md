@@ -18,7 +18,7 @@ _by Derek Conde Barranco_
 ## Initial Setup
 1. To first start setting up your github, you mush create an account on [github.com](http://www.github.com)
    * _Requires an email and password in order to sign up._
-   * _You also need to create a username for your `github`
+   * _You also need to create a username for your_ `github`
 2. Make sure that have already setup your local machine with an IDE (**ex:nitrous and cloud 9**)
 3. Inside of your IDE on your local machine, `git config --global username` "**Insert your username here**"
 
