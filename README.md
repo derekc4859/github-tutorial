@@ -29,3 +29,7 @@ _by Derek Conde Barranco_
 
 ---
 ## Workflow & Commands
+* `git init` calls your directory, repo for version control
+* `git status` View what files have been edited so far
+* `git add file.ext` Adds the file to the stage for it to be committed(**snapshot**)
+* `git add . ` adds entire directory to the stage.
