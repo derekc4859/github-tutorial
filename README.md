@@ -33,8 +33,8 @@ _by Derek Conde Barranco_
 
 ---
 ## Repository Setup
-
-
+1. To set up a repo in cloud 9, make sure you added your directory to it by `Mkdir filename`  
+2. Then you go to your `github`
 
 ---
 ## Workflow & Commands
