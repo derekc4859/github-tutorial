@@ -15,15 +15,21 @@ _by Derek Conde Barranco_
     * `Github` is also used to collab with others on the same files.
     * Can be used to interact with code and snapshots from Git.
     * Runs in the command line
-     * Uses git to interact with code from the snapshots
+     * Uses git to interact with code from the snapshots  
      * Once you use git,it becomes a repository
 ---   
-## Initial Setup
-1. To first start setting up your github, you mush create an account on [github.com](http://www.github.com)
+### Initial Setup
+1. To first start setting up your `github`, you mush create an account on [github.com](http://www.github.com)
    * _Requires an email and password in order to sign up._
    * _You also need to create a username for your_ `github`
 2. Make sure that have already setup your local machine with an IDE (**ex:nitrous and cloud 9**)
-3. Inside of your IDE on your local machine, `git config --global username` "**Insert your username here**"
+3. Inside of your IDE on your local machine, tell `git` to `git config --global username` "**Insert your username here**"
+  * _You need this in order for your commits to be labeled correctly_   
+4. Then tell `Git` your email address that will be used with your Git commits by `git config --global user.email` "**Insert your email address**"   
+  * _make sure that it's the same email that you use in `Github`._
+5. If you're setting up `github` with an ssh key, find your SSH key in your c9 IDE by going into the dashboard and opening up settings
+6. You then go to ssh-keys and copy the correct key to Github to add it in.
+7. The last step to confirm your IDE to `github` is to do `ssh -T git@github.com` and you're all set!
 
 ---
 ## Repository Setup
