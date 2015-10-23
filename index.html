@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="GitHub Tutorial : Git Good with GitHub!">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>GitHub Tutorial</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/derekc4859/github-tutorial">View on GitHub</a>
+
+          <h1 id="project_title">GitHub Tutorial</h1>
+          <h2 id="project_tagline">Git Good with GitHub!</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/derekc4859/github-tutorial/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/derekc4859/github-tutorial/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a id="github-tutorial" class="anchor" href="#github-tutorial" aria-hidden="true"><span class="octicon octicon-link"></span></a>GitHub Tutorial</h1>
+
+<p><em>by Derek Conde Barranco</em></p>
+
+<hr>
+
+<h2>
+<a id="git-vs-github" class="anchor" href="#git-vs-github" aria-hidden="true"><span class="octicon octicon-link"></span></a>Git vs. GitHub</h2>
+
+<h3>
+<a id="git" class="anchor" href="#git" aria-hidden="true"><span class="octicon octicon-link"></span></a>Git</h3>
+
+<ul>
+<li>
+<code>Git</code> is version control by keeping <strong>"snapshots"</strong> of code
+
+<ul>
+<li>Runs in the command line but doesn't require github. </li>
+<li>View past commits(snapshots) to refer back to the original code that you've created</li>
+<li>Use commits to go back to a version of your code in case anything goes wrong or if there's a groundbreaking mistake</li>
+</ul>
+</li>
+</ul>
+
+<h3>
+<a id="github" class="anchor" href="#github" aria-hidden="true"><span class="octicon octicon-link"></span></a>Github</h3>
+
+<ul>
+<li>
+<code>Github</code> stores your code in the cloud(<strong>internet</strong>) and is used to check changes from Git.
+
+<ul>
+<li>
+<code>Github</code> is also used to collab with others on the same files.</li>
+<li>Can be used to interact with code and snapshots from Git.</li>
+<li>Runs in the command line
+
+<ul>
+<li>Uses git to interact with code from the snapshots<br>
+</li>
+</ul>
+
+<h2>
+<a id="-once-you-use-gitit-becomes-a-repository" class="anchor" href="#-once-you-use-gitit-becomes-a-repository" aria-hidden="true"><span class="octicon octicon-link"></span></a>* Once you use git,it becomes a repository</h2>
+
+<h2>
+<a id="initial-setup" class="anchor" href="#initial-setup" aria-hidden="true"><span class="octicon octicon-link"></span></a>Initial Setup</h2>
+</li>
+</ul>
+</li>
+<li>To first start setting up your <code>github</code>, you mush create an account on <a href="http://www.github.com">github.com</a>
+
+<ul>
+<li><em>Requires an email and password in order to sign up.</em></li>
+<li>
+<em>You also need to create a username for your</em> <code>github</code>
+</li>
+</ul>
+</li>
+<li>Make sure that have already setup your local machine with an IDE (<strong>ex:nitrous and cloud 9</strong>)</li>
+<li>Inside of your IDE on your local machine, tell <code>git</code> to <code>git config --global user.name</code> "<strong>Insert your username here</strong>"
+
+<ul>
+<li>
+<em>You need this in order for your commits to be labeled correctly</em><br>
+</li>
+</ul>
+</li>
+<li>Then tell <code>Git</code> your email address that will be used with your Git commits by <code>git config --global user.email</code> "<strong>Insert your email address</strong>"<br>
+
+<ul>
+<li><em>make sure that it's the same email that you use in <code>Github</code>.</em></li>
+</ul>
+</li>
+<li>If you're setting up <code>github</code> with an ssh key, find your SSH key in your c9 IDE by going into the dashboard and opening up settings</li>
+<li>You then go to ssh-keys and copy the correct key to Github to add it in.</li>
+<li>The last step to confirm your IDE to <code>github</code> is to do <code>ssh -T git@github.com</code> and you're all set!</li>
+</ul>
+
+<hr>
+
+<h2>
+<a id="repository-setup" class="anchor" href="#repository-setup" aria-hidden="true"><span class="octicon octicon-link"></span></a>Repository Setup</h2>
+
+<h3>
+<a id="local-repository-setup" class="anchor" href="#local-repository-setup" aria-hidden="true"><span class="octicon octicon-link"></span></a>Local Repository Setup</h3>
+
+<ol>
+<li>To set up a local repository in cloud 9, make sure you added your directory to it by <code>mkdir file-repo</code> and then <code>cd file-repo</code><br>
+</li>
+<li>If you are unsure that you are in your repo in the command, type <code>pwd</code>
+</li>
+<li>In order to initialize your repo, you must type <code>git init</code>
+</li>
+<li>Later you <code>git config --global user.name "FirstLastName"</code> &amp;  <code>git config --global user.email "YourEmailHere"</code> if you have not done so already</li>
+<li>Create a file by <code>touch README.me</code> and then edit and save the file</li>
+<li>After saving your readme,<code>git status</code> to check if file needs to be committed<br>
+</li>
+<li>
+<code>git add README.me</code> to add your file to the stage and then `git commit -m "Insert Message here" to take a snapshot of your file
+###Remote Remote Setup</li>
+<li>To setup a remote repo you go to your <code>github</code> and on the top-right of the page, click the plus sign and then go to new repository.<br>
+</li>
+<li>Then you type in you repository name.
+
+<ul>
+<li>
+<em>MAKE SURE THAT THE NAME MATCHES WITH THE REPO!!</em> </li>
+</ul>
+</li>
+<li>After that, get ssh for the local repo by copying and pasting <code>git push -u "???"</code> &amp; <code>git remote add origin "???"</code> one line at a time.
+
+<ul>
+<li> This is required in order to send your commits from the local repo from your IDE to the remote repo from <code>github</code><br>
+</li>
+</ul>
+</li>
+</ol>
+
+<h2>
+<a id="4-try-to-refresh-your-github-page-and-check-if-your-commits-are-there-if-you-can-find-then-you-are-all-set" class="anchor" href="#4-try-to-refresh-your-github-page-and-check-if-your-commits-are-there-if-you-can-find-then-you-are-all-set" aria-hidden="true"><span class="octicon octicon-link"></span></a>4. Try to refresh your <code>github</code> page and check if your commits are there, if you can find then you are all set.</h2>
+
+<h2>
+<a id="workflow--commands" class="anchor" href="#workflow--commands" aria-hidden="true"><span class="octicon octicon-link"></span></a>Workflow &amp; Commands</h2>
+
+<ul>
+<li>
+<code>git init</code> Calls your directory, repo for version control</li>
+<li>
+<code>git status</code> View what files have been edited so far or that need to be committed</li>
+<li>
+<code>git add file.ext</code> Adds the file to the stage for it to be committed(<strong>snapshot</strong>)</li>
+<li>
+<code>git add .</code> Adds entire directory to the stage.</li>
+<li>
+<code>git commit -m "short/specific message"</code> Commits the file and write a small message with it
+
+<ul>
+<li>You need to write a message to the commit or else it will not work</li>
+</ul>
+</li>
+<li>
+<code>git log</code> See your past commit on git</li>
+<li>
+<code>git help</code> Gives you help with commands in case you forget</li>
+<li>
+<code>git diff</code> View the difference between your code and your previous commit</li>
+<li>
+<code>git push</code> Send your commits from the local repo to your remote repo(<code>github</code>)</li>
+</ul>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">GitHub Tutorial maintained by <a href="https://github.com/derekc4859">derekc4859</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
